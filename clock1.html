@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+    <link rel="stylesheet" href="clock1.css">
+</head>
+<body>
+    <img src="clock_logo.png" alt="clock" id="logo">
+    
+      <div class="time-solt">
+        <div class="slots">
+            <div id="slots-one">
+                <img src="wake_up.svg" alt="sun"class="img">
+                <h5 class="description">Set wake up time</h5>
+
+                <select name="wake-up-time" class="options" id="morning">
+                    <option value="wake-up1">8AM-9AM</option>
+                    <option value="wake-up2">9AM-10AM</option>
+                    <option value="wake-up3">10AM-11AM</option>
+                    <option value="wake-up4">11AM-12PM</option>
+                </select>
+
+            </div>
+            <div class="vertical one"></div>
+            <div id="slots-two">
+                <img src="lunch_time.svg" alt="lunch" class="img"> 
+                <h5 class="description">Set lunch time</h5>
+               
+                <select name="lunch-time" class="options" id="afternoon">
+                    <option value="lunch1">12PM-1PM</option>
+                    <option value="lunch2">1PM-2PM</option>
+                    <option value="lunch3">3PM-4PM</option>
+                </select>
+
+            </div>
+            <div class="vertical two">  
+            </div>
+            <div id="slots-three">
+                <img src="nap_time.svg" alt="nap" class="img">
+                <h5 class="description">Set nap time</h5>
+
+                <select name="nap-time" id="evening" class="options">
+                    <option value="nap1">4PM-5PM</option>
+                    <option value="nap2">5PM-6PM</option>
+                    <option value="nap3">6PM-7PM</option>
+                    <option value="nap4">7PM-8PM</option>
+                   </select>
+        
+            </div>
+            <div class="vertical three"> </div>
+            <div id="slots-four">
+                <img src="https://th.bing.com/th/id/OIP.m0bLxD3X5FoARCR8HjGmnwHaHa?pid=ImgDet&w=152&h=152&c=7" alt="night" class="img">
+                <h5 class="description">Set night time</h5>
+
+                <select name="night-time" id="night" class="options">
+                    <option value="night1">8PM-9PM</option>
+                    <option value="night2">9PM-10PM</option>
+                    <option value="night3">10PM-11PM</option>
+                    <option value="night4">11PM-12PM</option>
+                   </select>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="wish-card">
+        <h3> </h3>
+    </div>
+
+    <button id="set-alarm" onclick="setAlarm()" onmouseover="hoverChange()" onmouseout="hoverNoChange()">Set Alarm !</button>
+     
+    <div id="message">
+        <p id="msg"> </p>
+    </div>
+
+    <div class="digit-time">
+            <p>Time</p>
+            <div class="time hours">
+                <p id="hour"></p>
+                <p>Hours</p>
+            </div>
+            <h6>:</h6>
+            <div class="time minutes">
+                <p id="minute"></p>
+                <p>Mins</p>
+            </div>
+            <h5>:</h5>
+            <div class="time seconds">
+                <p id="second"></p>
+                <p>Secs</p>
+            </div>
+            <div class="time AMPM">
+                <p id="AMPM"></p>
+            </div>
+    </div>
+    <div class="digit-time1"></div>
+    <div class="digit-time2"></div>
+
+    <div id="title">
+        <h3> </h3>
+    </div>
+
+        <img src=" " alt="" id="image">
+
+<script src="clock.js"></script>
+</body>
+</html>
