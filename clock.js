@@ -10,45 +10,26 @@ function hoverChange(){
  }
 
 //digital time setting
-
+let time = setInterval(
 function updateClock() {
   // Get the current time, day , month and year
   let now = new Date();
   let hours = now.getHours();
   let minutes = now.getMinutes();
   let seconds = now.getSeconds();
-  let session = document.getElementById('AMPM');
- 
-
-
-  //set session
-  if(hours >= 12){
-    session.innerText = 'PM';
-  }
-  else{
-    session.innerText = 'AM';
-  }
+  let session = hours >= 12 ? "PM" : "AM" ;
 
   //12 hour format
   if(hours > 12){
     hours = hours - 12;
   }
-    //format to display time
-hours = hours < 10 ? '0' + hours : hours;
-minutes = minutes < 10 ? '0' + minutes : minutes;
-seconds = seconds < 10 ? '0' + seconds : seconds;
-  document.getElementById('hour').innerText = hours;
-  document.getElementById('minute').innerText = minutes; 
-  document.getElementById('second').innerText = seconds; 
 
 // set time greeting 
 
 mrng_hr = [8,9,10,11];
 lunch_hr = [12,1,2,3];
 nap_hr = [4,5,6,7];
-night_hr = [8,9,10,11,12];
-
-let greeting, message,image;
+night_hr = [8,9,10,11];
 
 if(mrng_hr.includes(hours)){
   greeting = "Good Morning!! Wake up !!";
@@ -74,7 +55,15 @@ else {
   image = document.getElementById("image");
   image.src = "Component\ 32\ –\ 1.png";
 }
-setInterval(updateClock, 1000);
+     //format to display time
+hours = hours < 10 ? '0' + hours : hours;
+minutes = minutes < 10 ? '0' + minutes : minutes;
+seconds = seconds < 10 ? '0' + seconds : seconds;
+ 
+  document.getElementById('hour').innerText = hours;
+  document.getElementById('minute').innerText = minutes; 
+  document.getElementById('second').innerText = seconds; 
+  document.getElementById('AMPM').innerHTML = session;
 
  const greetingOne = document.getElementsByTagName("h3")[0];
  greetingOne.innerText = greeting;
@@ -82,8 +71,7 @@ setInterval(updateClock, 1000);
  const greetingTwo = document.getElementsByTagName("h3")[1];
  greetingTwo.innerText = message;
 
-}
-updateClock();
+},1000)
 
 //set alarm
 function setAlarm(){
