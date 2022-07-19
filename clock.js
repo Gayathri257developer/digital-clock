@@ -49,7 +49,7 @@ else if(nap_hr.includes(hours)){
   image = document.getElementById("image");
   image.src = "lunch_image.png";
 }
-else {
+else if(night_hr.includes(hours)) {
   greeting = "Good Night !!";
   message = "CLOSE YOUR EYES AND GO TO SLEEP";
   image = document.getElementById("image");
