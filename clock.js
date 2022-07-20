@@ -23,13 +23,13 @@ function hoverNoChange(){
    greeting = "Good Morning!! Wake up !!";
    message = "GRAB SOME HEALTHY BREAKFAST!!!";
    image = document.getElementById("image");
-   image.src = "Component 30 – 1.svg";
+   image.src = "Component\ 30\ –\ 1.svg";
  }
  else if (hours >=12 && hours<16){
    greeting = "Good Afternoon!! TAKE SOME SLEEP";
    message = "LET'S HAVE SOME LUNCH !!";
    image = document.getElementById("image");
-   image.src = "Component 31 – 1.svg";
+   image.src = "Component\ 31\ –\ 1.svg";
  }
  else if (hours >=16 && hours<20){
    greeting = "good evening !!";
@@ -41,7 +41,7 @@ function hoverNoChange(){
    greeting = "Good Night !!";
    message = "CLOSE YOUR EYES AND GO TO SLEEP";
    image = document.getElementById("image");
-   image.src = "Component 32 – 1.png";
+   image.src = "Component\ 32\ –\ 1.svg";
  }
 //12 hr format
  if(hours > 12){
