@@ -41,7 +41,7 @@ function hoverNoChange(){
    greeting = "Good Night !!";
    message = "CLOSE YOUR EYES AND GO TO SLEEP";
    image = document.getElementById("image");
-   image.src = "Component\ 32\ –\ 1.svg";
+   image.src = "Component\ 32\ –\ 1.png";
  }
 //12 hr format
  if(hours > 12){
