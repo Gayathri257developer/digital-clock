@@ -247,7 +247,6 @@ transition: linear 1s;
     border: 1px solid #EDEDED;
     border-radius: 10px;
     opacity: 1;
-    display: none;
 }
 #message p{
     position: absolute;
