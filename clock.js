@@ -23,25 +23,25 @@ function hoverNoChange(){
    greeting = "Good Morning!! Wake up !!";
    message = "GRAB SOME HEALTHY BREAKFAST!!!";
    image = document.getElementById("image");
-   image.src = "morning.svg";
+   image.src = "Component 30 – 1.svg";
  }
  else if (hours >=12 && hours<16){
    greeting = "Good Afternoon!! TAKE SOME SLEEP";
    message = "LET'S HAVE SOME LUNCH !!";
    image = document.getElementById("image");
-   image.src = "lunch.svg";
+   image.src = "Component 31 – 1.svg";
  }
  else if (hours >=16 && hours<20){
    greeting = "good evening !!";
    message = "STOP YAWNING, Get some tea.. ITS JUST EVENING!";
    image = document.getElementById("image");
-   image.src = "evening.png";
+   image.src = "lunch_image.png";
  }
  else if (hours >=20 && hours<24) {
    greeting = "Good Night !!";
    message = "CLOSE YOUR EYES AND GO TO SLEEP";
    image = document.getElementById("image");
-   image.src = "night.png";
+   image.src = "Component 32 – 1.png";
  }
 //12 hr format
  if(hours > 12){
